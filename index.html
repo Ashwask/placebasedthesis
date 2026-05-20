@@ -316,32 +316,39 @@
   .photo-bleed {
     position: relative;
     width: 100%;
-    height: clamp(360px, 60vh, 640px);
-    overflow: hidden;
-    background: var(--mangrove-deep);
+    background: var(--paper);
   }
   .photo-bleed > .img {
-    position: absolute; inset: 0;
+    position: relative;
+    width: 100%;
+    height: clamp(360px, 60vh, 640px);
     background-size: cover; background-position: center;
     filter: contrast(1.04) saturate(0.95);
   }
   .photo-bleed .caption {
-    position: absolute; bottom: 0; left: 0; right: 0;
-    padding: clamp(20px, 4vw, 40px) clamp(24px, 6vw, 64px);
-    background: linear-gradient(180deg, transparent 0%, rgba(14,31,28,0.85) 100%);
-    color: var(--paper);
-    z-index: 2;
+    padding: clamp(24px, 4vw, 44px) clamp(24px, 6vw, 64px) clamp(28px, 5vw, 56px);
+    background: var(--paper);
+    color: var(--ink);
+    max-width: 1120px;
+    margin: 0 auto;
   }
   .photo-bleed .caption .label {
-    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
-    color: var(--clay-soft); font-weight: 600; margin-bottom: 8px;
+    font-size: 11.5px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--clay); font-weight: 700; margin-bottom: 12px;
+    display: inline-flex; align-items: center; gap: 14px;
+  }
+  .photo-bleed .caption .label::before {
+    content: ''; display: inline-block;
+    width: 24px; height: 1px; background: var(--clay);
   }
   .photo-bleed .caption .cap-text {
     font-family: 'Fraunces', serif;
-    font-variation-settings: "opsz" 36;
+    font-variation-settings: "opsz" 36, "SOFT" 40;
     font-style: italic;
-    font-size: clamp(18px, 2vw, 22px);
-    max-width: 720px; line-height: 1.4;
+    font-size: clamp(19px, 2.1vw, 23px);
+    font-weight: 400;
+    max-width: 820px; line-height: 1.45;
+    color: var(--ink);
   }
 
   /* ===================== CHALLENGE CARDS ===================== */
