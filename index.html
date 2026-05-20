@@ -327,29 +327,21 @@
   }
   .photo-bleed .caption {
     position: absolute; bottom: 0; left: 0; right: 0;
-    padding: clamp(72px, 11vw, 130px) clamp(24px, 6vw, 64px) clamp(28px, 4vw, 44px);
-    background: linear-gradient(180deg,
-      rgba(14,31,28,0) 0%,
-      rgba(14,31,28,0.35) 28%,
-      rgba(14,31,28,0.78) 60%,
-      rgba(14,31,28,0.96) 100%);
+    padding: clamp(20px, 4vw, 40px) clamp(24px, 6vw, 64px);
+    background: linear-gradient(180deg, transparent 0%, rgba(14,31,28,0.85) 100%);
     color: var(--paper);
     z-index: 2;
   }
   .photo-bleed .caption .label {
-    font-size: 11.5px; letter-spacing: 0.22em; text-transform: uppercase;
-    color: var(--clay-soft); font-weight: 700; margin-bottom: 10px;
-    text-shadow: 0 1px 6px rgba(0,0,0,0.55);
+    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--clay-soft); font-weight: 600; margin-bottom: 8px;
   }
   .photo-bleed .caption .cap-text {
     font-family: 'Fraunces', serif;
-    font-variation-settings: "opsz" 36, "SOFT" 20;
+    font-variation-settings: "opsz" 36;
     font-style: italic;
-    font-size: clamp(19px, 2.1vw, 23px);
-    font-weight: 400;
-    max-width: 760px; line-height: 1.42;
-    color: #FBF7EE;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.4);
+    font-size: clamp(18px, 2vw, 22px);
+    max-width: 720px; line-height: 1.4;
   }
 
   /* ===================== CHALLENGE CARDS ===================== */
